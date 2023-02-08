@@ -24,11 +24,12 @@ import leerVisita
 
 class Programa:
     def __init__(self):
+        self.dato=1
         self.datoCarrera = 1
-        self.datoEstudiante=2
-        self.datoHorario=3
-        self.datoVisita=4
-        self.datoEmpresa=5
+        self.datoEstudiante=1
+        self.datoHorario=1
+        self.datoVisita=1
+        self.datoEmpresa=1
 
     def menu(self):
         while self.dato:
@@ -43,32 +44,31 @@ class Programa:
             if seleccion == "1":
                 # llamar la seleccion insertar
                 # print("Insertar")
-                def menuCarrera(self):
-                    while self.datoCarrera:
-                        seleccionar = input("""
-                        seleccione: 
-                        1. Insertar
-                        2. Actualizar
-                        3.leer
-                        4.Borrar
-                        """)
-                        if seleccionar == 1:
-                            InsertarCarrera.insertarCarrera()
+                
+                while self.datoCarrera:
+                    seleccionar = input("""
+                    seleccione: 
+                    1. Insertar
+                    2. Actualizar
+                    3.leer
+                    4.Borrar
+                    """)
+                    if seleccionar == 1:
+                        InsertarCarrera.insertarCarrera()
 
-                        elif seleccionar == 2:
-                            actualizar_carrera.updateCarrera
+                    elif seleccionar == 2:
+                        actualizar_carrera.updateCarrera
 
-                        elif seleccionar == 3:
-                            leerCarrera.consultarCarrera
-                        elif seleccionar == 4:
-                            borrarCarrera.deleteCarerra()
+                    elif seleccionar == 3:
+                        leerCarrera.consultarCarrera
+                    elif seleccionar == 4:
+                        borrarCarrera.deleteCarerra()
 
-                        else:
-                            print("error")
+                    else:
+                        print("error")
             elif seleccion == "2":
                 # Llamar a la opcion actualizar
                 # print("Actualizar")
-                def menuEstudiante(self):
                     while self.datoEstudiante:
                         seleccionar = input("""
                         seleccione: 
@@ -88,7 +88,6 @@ class Programa:
                         else:
                             print("error")
             elif seleccion == "3":
-                def menuHorario(self):
                     while self.datoHorario:
                         seleccionar = input("""
                         seleccione: 
@@ -109,7 +108,6 @@ class Programa:
                             print("error")
 
             elif seleccion == "4":
-                def menuVisita(self):
                     while self.datoVisita:
                         seleccionar = input("""
                         seleccione: 
@@ -131,7 +129,6 @@ class Programa:
                             print("error")
             elif seleccion == "5":
                 # print("Borrar")
-                def menuEmpresa(self):
                     while self.datoEmpresa:
                         seleccionar = input("""
                         seleccione: 
